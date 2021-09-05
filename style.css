@@ -36,6 +36,12 @@ section {
     padding: 2rem 9%;
 }
 
+.btn {
+    display: inline-block;
+    padding: .8rem 3rem;
+    border: .2rem solid var(--red);
+}
+
 header {
     position: fixed;
     top: 0;
@@ -94,6 +100,7 @@ header .navbar :hover {
 
 .home .content {
     flex: 1 1 40rem;
+    padding-top: 6.5rem;
 }
 
 .home .image {
@@ -102,12 +109,29 @@ header .navbar :hover {
 
 .home .image img {
     width: 100%;
-
+    padding: 1rem;
+    animation: float 3s linear infinite;
 }
 
+@keyframes float {  
+    0%, 100% {
+        transform: translateY(0rem);
+    }
+    50% {
+        transform: translateY(3rem);
+    }
+}
 
+.home .content h3 {
+    font-size: 5rem;
+    color: #333;
+}
 
-
+.home .content p {
+    font-size: 1.7rem;
+    color: #666;
+    padding: 1rem 0;
+}
 
 
 
